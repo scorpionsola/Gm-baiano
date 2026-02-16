@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Baiano Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+
+<body>
+
+<div class="card">
+<h2>Android ROM Builder</h2>
+
+<select id="device">
+<option value="alioth">Alioth</option>
+<option value="tapas">Tapas</option>
+</select>
+
+<button onclick="startBuild()">Start Build</button>
+</div>
+
+<div class="card">
+<h3>Builds</h3>
+<div id="builds"></div>
+</div>
+
+<div class="card">
+<h3>Logs</h3>
+<pre id="logs"></pre>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
