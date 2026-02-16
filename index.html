@@ -18,6 +18,14 @@
         if (user) {
             document.getElementById('user-name').innerText = `Bem-vindo, ${user.first_name}!`;
         }
+         // 3. Lógica do Botão Principal (Novo código)
+    const mainButton = tg.MainButton;
+    mainButton.setText("CLIQUE AQUI! ✨");
+    mainButton.show();
+
+    mainButton.onClick(() => {
+        tg.showAlert("Você clicou no botão principal! 🎉");
+    });
     </script>
 </body>
 </html>
